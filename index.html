@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Focus Reminder App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Focus Reminder</h1>
+    <p>Set how often you want to be reminded (in minutes):</p>
+    <input type="number" id="minutesInput" min="1" placeholder="e.g. 15" />
+    <br>
+    <button onclick="startReminder()">Start</button>
+    <button onclick="stopReminder()">Stop</button>
+    <p id="status"></p>
+  </div>
+  <audio id="alarmSound" src="E:\stay focus\alarm.mp3.wav" preload="auto"></audio>
+  <script src="script.js"></script>
+</body>
+</html>
